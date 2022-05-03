@@ -15,6 +15,7 @@
 syntax = "proto3";
 
 package routeguide;
+option go_package = "go/route_guide";
 
 // Interface exported by the server.
 service RouteGuide {

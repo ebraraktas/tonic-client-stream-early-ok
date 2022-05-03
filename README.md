@@ -43,6 +43,10 @@ python client.py [PORT]
 # default value of the PORT is 5001, if omitted
 ```
 
+## Go
+
+`go` directory has implementations of the same server and client in go language.
+
 ## Issue
 
 It works OK if I call server in `server.rs` from `client.rs`, or call 
@@ -74,3 +78,6 @@ grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
         debug_error_string = "{"created":"@1651470233.217719000","description":"Error received from peer ipv6:[::1]:5000","file":"src/core/lib/surface/call.cc","file_line":1075,"grpc_message":"Received RST_STREAM with error code 8","grpc_status":1}"
 >
 ```
+
+Go implementation of the service can be called from Python client without an issue. Surprisingly, 
+go client can call rust server without an issue, too.
