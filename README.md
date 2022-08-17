@@ -1,7 +1,9 @@
 # tonic-client-stream-early-ok
 
-Demo code to demonstrate an issue when server returns
-early OK to a streaming request.
+Demo code to demonstrate [the issue](https://github.com/hyperium/tonic/issues/992) 
+when server returns early OK to a streaming request. As you can see
+from [the comment](https://github.com/hyperium/tonic/issues/992#issuecomment-1216973973),
+the issue is fixed by `h2 >= 3.14.0`.
 
 ## Rust
 
